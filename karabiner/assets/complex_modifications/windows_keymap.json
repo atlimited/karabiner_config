@@ -1,0 +1,30 @@
+{
+    "title": "Windows keymap",
+    "rules": [
+      {
+          "title": "alg-shift",
+          "description": "Swithch input language by alt-shift",
+          "manipulators": [
+              {
+                  "from": {
+                      "key_code": "left_shift",
+                      "modifiers": {
+                          "mandatory": [
+                              "left_option"
+                          ]
+                      }
+                  },
+                  "to": [
+                      {
+                          "key_code": "spacebar",
+                          "modifiers": [
+                              "left_command"
+                          ]
+                      } 
+                  ],
+                  "type": "basic"
+              }
+          ]
+      }
+  ]
+}
